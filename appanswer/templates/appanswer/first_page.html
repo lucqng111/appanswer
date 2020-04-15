@@ -1,0 +1,39 @@
+{% extends 'appanswer/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+            <div class="row justify-content-between">
+                <div class="col">
+                    <a class="navbar-brand" href="first_page.html" >App<span>Answer</span></a>
+                </div>
+            </div>
+    </div>
+    {#    Image View#}
+    <div class="img-container" style="text-align: center;">
+
+        <p style="text-align: center;color: white">{{ content.title }}</p>
+{#        <div class = "heart"></div>#}
+        <img src="../../../media/{{ img.images  }}" alt="Hello" style="height: 500px;width:900px">
+        <p style="margin-left: auto;margin-right: auto;width: 40em;margin-top: 30px;color: white" >
+           {{ content.content }}
+        </p>
+    </div>
+
+    <div class="container">
+        <div style="text-align: center">
+            <form action="/appanswer/first_page/get_choice" method="post">
+                {% csrf_token %}
+                <button type="submit" name="choice" value="yes" class="btn btn-primary">Yes</button>
+                <button type="submit" name="choice" value="no" class="btn btn-danger">No</button>
+            </form>
+        </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+{%  endblock %}

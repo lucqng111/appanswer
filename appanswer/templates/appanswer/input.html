@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Input Password</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'appanswer/css/demo.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'appanswer/css/mystyle.css' %}">
+</head>
+<body>
+		<div class="container">
+			<header class="codrops-header">
+				<h1>App <span>Answer</span></h1>
+			</header>
+		</div>
+        <form action="/appanswer/input_password" method="post">
+            {% csrf_token %}
+            <div class="containerInput">
+                <ol>
+                    <span><label for="q">Input Password</label></span><br>
+                    <input type="password" name="pass">
+                </ol>
+                <ol>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </ol>
+
+            </div>
+        </form>
+{#        <div class="contenedor">#}
+{#          <div class="todo">#}
+{#            <div class="dog">#}
+{#              <span class="leg3"></span>#}
+{#              <div class="body"><span class="cola"></span><span class="leg"></span></div>#}
+{#              <div class="cabezota">#}
+{#                <div class="orejas"><span class="orejitas"></span></div>#}
+{#                <div class="orejas3"><span class="orejitas3"></span></div>#}
+{#                <div class="cabeza">#}
+{#                  <span class="cabeza3"></span>#}
+{#                  <span class="ojos"><span class="iris"></span></span>#}
+{#                  <span class="nariz"></span>#}
+{#                  <span class="nariz3"></span>#}
+{#                </div>#}
+{#              </div>#}
+{#              <div class="canasta"></div>#}
+{#            </div>#}
+{#          </div>#}
+{#        </div>#}
+
+
+
+</div>
+</body>
+</html>
