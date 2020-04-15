@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -81,13 +82,13 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'db8rq88990ljdn',
+        'NAME': 'd98kt0pmg38odh',
 
-        'USER': 'tamqoirmkcwpfq',
+        'USER': 'rhzwhamqnwrkpl',
 
-        'PASSWORD': 'e4843d485fceda1c29f0cb81a7b127522af89995fc40a02e9a10eb8df72ea141',
+        'PASSWORD': 'fcb83197e409b4b3f33d9012f47380c342e690febfcb992d1d5c585bc9471b25',
 
-        'HOST': 'ec2-3-229-210-93.compute-1.amazonaws.com',
+        'HOST': 'ec2-79-125-26-232.eu-west-1.compute.amazonaws.com',
 
         'PORT': '5432',
 
@@ -131,13 +132,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 #
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-# PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
-# STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
-# STATIC_URL = '/static/'
+PROJECT_ROOT  =  os.path.join(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = "/static/"
 #
 # # Extra lookup directories for collectstatic to find static files
 # STATICFILES_DIRS = (
@@ -148,16 +149,7 @@ STATIC_URL = '/static/'
 # STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # #  Add configuration for static files storage using whitenoise
 #
-# MIDDLEWARE = [
-#     'whitenoise.middleware.WhiteNoiseMiddleware',
-#     'django.middleware.security.SecurityMiddleware',
-#     'django.contrib.sessions.middleware.SessionMiddleware',
-#     'django.middleware.common.CommonMiddleware',
-#     'django.middleware.csrf.CsrfViewMiddleware',
-#     'django.contrib.auth.middleware.AuthenticationMiddleware',
-#     'django.contrib.messages.middleware.MessageMiddleware',
-#     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-# ]
+
 #
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 prod_db = dj_database_url.config(conn_max_age=500)
