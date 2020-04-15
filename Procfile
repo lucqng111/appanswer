@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath appanswer appanswer.wsgi
+web: gunicorn mysite.wsgi
