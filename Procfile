@@ -1,1 +1,1 @@
-web: gunicorn appanswer.wsgi --log-file -
+web: gunicorn --pythonpath appanswer appanswer.wsgi
