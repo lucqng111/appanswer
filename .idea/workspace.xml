@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c133a06f-15b6-4b87-ad19-e60e0a5e06c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appanswer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/appanswer/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appanswer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/appanswer/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,9 @@
       <workItem from="1586963649047" duration="352000" />
       <workItem from="1586964018626" duration="11000" />
       <workItem from="1586964157439" duration="290000" />
-      <workItem from="1586965729104" duration="8501000" />
+      <workItem from="1586965729104" duration="8662000" />
+      <workItem from="1587011959305" duration="454000" />
+      <workItem from="1587045676472" duration="362000" />
     </task>
     <servers />
   </component>
@@ -104,9 +107,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="699" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586964015290" />
-    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1586964157208">
+    <state x="397" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1587045676616">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1586964157208" />
+    <state x="397" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1587045676616" />
   </component>
 </project>

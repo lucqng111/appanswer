@@ -8,6 +8,8 @@ urlpatterns = [
     path('second_page/get_answer', views.post_second_page, name="post_first_page"),
     path('', views.inputs, name="input"),
     path('input_password', views.get_inputs, name="get_input"),
-    path('thank_you', views.thank)
+    path('thank_you', views.thank),
+    path('get', views.get)
 ]
+
 

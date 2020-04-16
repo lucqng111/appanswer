@@ -90,3 +90,9 @@ def get_inputs(request):
         return redirect("/appanswer/first_page")
     else:
         return render(request, "appanswer/input.html")
+
+
+def get(request):
+    content = {"abc": 1}
+    return HttpResponse(content)
+
